@@ -1,0 +1,20 @@
+CREATE TABLE psp (
+    id SERIAL PRIMARY KEY,
+    game TEXT,
+    console TEXT,
+    name TEXT,
+    publisher TEXT,
+    developer TEXT,
+    total_shippied INTEGER,
+    total_sales INTEGER,
+    na_sales INTEGER,
+    pal_sales INTEGER,
+    japan_sales INTEGER,
+    other_sales INTEGER,
+    release_date DATE,
+    last_update DATE,
+    rating NUMERIC(3,2),
+    ratings_count INTEGER,
+    genres TEXT,
+    platforms TEXT
+);
