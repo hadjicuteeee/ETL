@@ -34,11 +34,13 @@ def transform_data(df):
     df.drop_duplicates(inplace=True)
     print(num_duplicates)
 
+    
     df.columns = [c.strip().lower().replace(' ', '_') for c in df.columns]
 
     df.to_csv("C:\\Users\\apues\\Downloads\\psp.cleaned.csv", index=False, na_rep='')
 
     return df
+
 
 
 
